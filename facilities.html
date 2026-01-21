@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facilities | DigiLibrary</title>
+
+  <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="facilities.css">
+</head>
+<body>
+    
+
+<header>
+  <div class="logo">📚 <span>Digi</span>Library</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ebook.html">Read Ebooks</a>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </nav>
+</header>
+
+<h1 class="page-title">Our Facilities</h1>
+
+<section class="facilities">
+
+  <div class="facility-card" onclick="goEbooks()">
+    <i class="fa fa-search"></i>
+    <h3>Book Search</h3>
+    <p>Search books by name and category.</p>
+  </div>
+
+  <div class="facility-card" onclick="goEbooks()">
+    <i class="fa fa-book-open"></i>
+    <h3>Read E-Books</h3>
+    <p>Read ebooks online.</p>
+  </div>
+
+  <div class="facility-card" onclick="goEbooks()">
+    <i class="fa fa-download"></i>
+    <h3>Download Books</h3>
+    <p>Download ebooks and images.</p>
+  </div>
+
+  <div class="facility-card" onclick="userLogin()">
+    <i class="fa fa-user-graduate"></i>
+    <h3>Student Portal</h3>
+    <p>View issued and returned books.</p>
+  </div>
+
+  <div class="facility-card" onclick="adminLogin()">
+    <i class="fa fa-user-shield"></i>
+    <h3>Admin Panel</h3>
+    <p>Add, delete and manage books.</p>
+  </div>
+
+  <div class="facility-card" onclick="dueInfo()">
+    <i class="fa fa-clock"></i>
+    <h3>Due Date & Fine</h3>
+    <p>Automatic fine calculation.</p>
+  </div>
+
+</section>
+
+<script src="facilities.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Segoe UI;
+  background: url("bg.jpg") center/cover fixed;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.4);
+}
+
+.logo span { color: #00c6ff; }
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 42px;
+}
+
+.facilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+  padding: 40px 80px;
+}
+
+.facility-card {
+  background: rgba(0,0,0,0.45);
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.facility-card i {
+  font-size: 40px;
+  color: #00c6ff;
+  margin-bottom: 15px;
+}
+
+.facility-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}

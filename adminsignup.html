@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Signup</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-box">
+  <h2>Admin Signup</h2>
+
+  <input type="text" id="adminName" placeholder="Admin Name">
+  <input type="email" id="adminEmail" placeholder="Email">
+  <input type="password" id="adminPassword" placeholder="Password">
+
+  <button onclick="adminSignup()">Signup</button>
+
+  <p>Already admin? <a href="adminlogin.html">Login</a></p>
+   <!-- ✅ BACK BUTTON -->
+  <button class="back-btn" onclick="goBack()">⬅ Back</button>
+</div>
+
+<script src="auth.js"></script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+</script>
+</body>
+</html>

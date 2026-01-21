@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Add Book - Digital Library</title>
+<link rel="stylesheet" href="addbook.css">
+</head>
+<body>
+
+
+<header>
+    <div class="logo">📚 <span>Digital</span>Library</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ebook.html">Read Ebooks</a>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Add New Book</h2>
+    <form id="bookForm">
+        <input type="text" id="title" placeholder="Book Title" required><br>
+        <input type="text" id="author" placeholder="Author Name" required><br>
+        <input type="text" id="category" placeholder="Category" required><br>
+        <input type="text" id="image" placeholder="Image URL"><br>
+        <input type="text" id="pdf" placeholder="PDF URL"><br>
+        <button type="submit">Add Book</button>
+    </form>
+    <div class="success" id="successMsg"></div>
+</div>
+<script src="addbook.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>
